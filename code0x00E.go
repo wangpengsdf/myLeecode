@@ -1,10 +1,5 @@
 package main
 
-/*
- * 最大子序和
- * https://leetcode-cn.com/problems/maximum-subarray/
- */
-
 func maxSubArray(nums []int) int {
 	var sum = nums[0]
 	var n = nums[0]
