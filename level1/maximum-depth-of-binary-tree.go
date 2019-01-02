@@ -1,5 +1,8 @@
 package main
 
+import . "myLeecode/common"
+
+
 /*
  * 二叉树深度判断
  * https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/

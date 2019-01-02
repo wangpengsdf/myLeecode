@@ -1,30 +1,13 @@
-package main
+package level3
 
-import "fmt"
+import(
+	. "myLeecode/common"
+)
 
 /*
- * 主要是这两道题，合并两个列表和N个列表
- * https://leetcode-cn.com/problems/merge-two-sorted-lists/
+ * 合并N个链表列表
  * https://leetcode-cn.com/problems/merge-k-sorted-lists
  */
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
-//格式化输出链表的内容
-func (l *ListNode)String() string{
-	var s = fmt.Sprintf("List: %d",l.Val)
-	tail := l.Next
-	for {
-		if tail != nil{
-			s += fmt.Sprintf(" %d",tail.Val)
-			tail = tail.Next
-		}else{
-			return s
-		}
-	}
-}
 
 // 使用查找法实现
 func MergeNLists(nodes... *ListNode) *ListNode {
@@ -65,11 +48,4 @@ func MergeNLists(nodes... *ListNode) *ListNode {
 		}
 	}
 }
-
-//利用合并N个List实现
-func MergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
-	return MergeNLists(l1,l2)
-}
-
-
 

@@ -1,15 +1,10 @@
 package main
 
+import . "myLeecode/common"
 /*
  * 相同的树
  * https://leetcode-cn.com/problems/same-tree/
  */
-
-type TreeNode struct {
-	Val int
-	Left *TreeNode
-	Right *TreeNode
-}
 
 func isSameTree(p *TreeNode, q *TreeNode) bool {
 	if p == nil && q == nil{return true}

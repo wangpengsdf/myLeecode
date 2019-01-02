@@ -1,5 +1,7 @@
 package main
 
+import . "myLeecode/common"
+
 /*
  * 二进制求和
  * https://leetcode-cn.com/problems/add-binary

@@ -1,5 +1,7 @@
 package main
 
+import . "myLeecode/common"
+
 /*
  * 路径总和
  * https://leetcode-cn.com/problems/path-sum/

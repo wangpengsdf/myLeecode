@@ -1,5 +1,7 @@
 package main
 
+import . "myLeecode/common"
+
 import "testing"
 
 func TestIsSymmetric(t *testing.T) {

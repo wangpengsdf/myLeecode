@@ -1,8 +1,10 @@
 package main
 
+import . "myLeecode/common"
+
 /*
- * 二进制求和
- * https://leetcode-cn.com/problems/add-binary
+ * 平衡二叉树
+ * https://leetcode-cn.com/problems/balanced-binary-tree/
  */
 
 func isBalanced(root *TreeNode) bool {
