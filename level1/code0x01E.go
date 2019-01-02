@@ -21,3 +21,6 @@ func generate(numRows int) [][]int {
 	return lines
 }
 
+func GeneratePascals(numRows int)  [][]int  {
+	return generate(numRows)
+}
